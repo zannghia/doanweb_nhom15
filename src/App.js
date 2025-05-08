@@ -29,32 +29,12 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/results" element={<SearchResults />} />
+          <Route path="/book-flight" element={<BookFlight />} />
+          <Route path="//ticket-info/:id_ticket" element={<TicketInfo />} />
+
 
           {/* Routes cần bảo vệ */}
-          <Route
-            path="/results"
-            element={
-              <PrivateRoute>
-                <SearchResults />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/book-flight"
-            element={
-              <PrivateRoute>
-                <BookFlight />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/ticket-info/:id_ticket"
-            element={
-              <PrivateRoute>
-                <TicketInfo />
-              </PrivateRoute>
-            }
-          />
+
         </Routes>
         <Footer />
       </div>
