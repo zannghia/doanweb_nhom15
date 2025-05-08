@@ -1,0 +1,16 @@
+.footer {
+    background-color: #D8BFD8;
+    color: #333;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-link {
+    color: #4B0082;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #6A1B9A;
+    text-decoration: underline;
+}

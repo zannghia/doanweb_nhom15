@@ -1,0 +1,71 @@
+
+/* Container */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flexbox Container cho các dịch vụ */
+.services-row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/* Các dịch vụ con */
+.services-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.33% - 20px); 
+    transition: transform 0.3s ease;
+}
+
+.services-img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 180px;  
+}
+
+.services-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #444;
+}
+
+.services-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.services-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.services-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.services-btn:hover {
+    background-color: #007bff;
+}
+
+.services-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
