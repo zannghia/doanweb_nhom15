@@ -19,7 +19,7 @@ const SearchAds = () => {
         };
 
         try {
-            const response = await fetch('/api/flight', {
+            const response = await fetch('http://giakhanhstu.id.vn/api/flight', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

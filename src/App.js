@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/results" element={<SearchResults />} />
           <Route path="/book-flight" element={<BookFlight />} />
-          <Route path="//ticket-info/:id_ticket" element={<TicketInfo />} />
+          <Route path="/ticket-info/:id_ticket" element={<TicketInfo />} />
 
 
           {/* Routes cần bảo vệ */}
