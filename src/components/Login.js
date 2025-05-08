@@ -20,7 +20,7 @@ const Login = () => {
         setLoading(true);
 
         try {
-            const response = await fetch('https://login-one-beige.vercel.app/user');
+            const response = await fetch('https://login-one-beige.vercel.app/users');
             const data = await response.json();
 
             const user = data.find(
